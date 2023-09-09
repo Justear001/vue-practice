@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="app"> Hello World</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">Hello World</div>
 
-  <script src="./dist/vue.js"></script>
-  <script>
-    console.log(Vue)
-    const vm = new Vue({
-      el: "#app",
-      data: {},
-      computed: {},
-      watch:{},
-      method: {}
-    })
-  </script>
-</body>
+    <script src="./dist/vue.js"></script>
+    <script>
+      console.log(Vue);
+      const vm = new Vue({
+        el: "#app",
+        data: {
+          name: "小明",
+          age: 18,
+          love: {
+            sports: "篮球",
+          },
+          list: [1, 2, 3, 4]
+        },
+        computed: {},
+        watch: {},
+        method: {},
+      });
+      console.log(vm._data)
+    </script>
+  </body>
 </html>
